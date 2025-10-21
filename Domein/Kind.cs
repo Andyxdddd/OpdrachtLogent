@@ -2,6 +2,8 @@ namespace Domein;
 
 public class Kind : Persoon
 {
+    public string FavorietSpeelgoed { get; set; }
+
     private readonly List<Volwassene> _ouders;
 
     public List<Volwassene> Ouders
@@ -14,11 +16,12 @@ public class Kind : Persoon
         }
     }
 
-    public Kind(string naam, DateTime geboortedatum, string? foto, List<Volwassene> ouders)
+    public Kind(string naam, DateTime geboortedatum, string? foto, List<Volwassene> ouders, string favorietSpeelgoed)
         : base(naam, geboortedatum, foto)
     {
         Ouders = ouders;
+        FavorietSpeelgoed = favorietSpeelgoed;
     }
-    
+
     // TODO: favorietSpeelgoed
 }
