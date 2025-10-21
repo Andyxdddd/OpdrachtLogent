@@ -2,10 +2,12 @@ namespace Domein;
 
 public abstract class Volwassene : Persoon
 {
-    private readonly List<Kind> _kinderen = new();
+    private readonly List<Kind> _kinderen = [];
+    
     public Volwassene(string naam, DateTime geboortedatum, string? foto) : base(naam, geboortedatum, foto)
     {
     }
+    
     public void VoegKindToe(Kind kind)
     {
         _kinderen.Add(kind);
