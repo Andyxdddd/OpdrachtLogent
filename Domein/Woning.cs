@@ -7,6 +7,7 @@ public class Woning
     public int Postcode { get; set; }
     public string Stad { get; set; }
     public List<Persoon> Bewoners { get; } = [];
+    public List<Huisdier> Huisdieren { get; } = [];
     
     public Woning(string straatnaam, int huisnummer, int postcode, string stad)
     {

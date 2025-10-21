@@ -22,4 +22,6 @@ public abstract class Volwassene : Persoon
     {
         return _kinderen;
     }
+    
+    // TODO: get kind by name
 }

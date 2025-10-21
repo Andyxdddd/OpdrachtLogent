@@ -19,4 +19,6 @@ public class Kind : Persoon
     {
         Ouders = ouders;
     }
+    
+    // TODO: favorietSpeelgoed
 }
