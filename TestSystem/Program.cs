@@ -14,10 +14,10 @@ class Program
 
         var volwassene1 = new Verpleger("Bob", DateTime.Now, null);
         var volwassene2 = new Politieagent("Alice", DateTime.Now, null);
-        var kind1 = new Kind("Tom", DateTime.Now, null, [volwassene1, volwassene2], "Lufufu");
+        var kind1 = KindFactory.MaakKind("Tom", DateTime.Now, null, [volwassene1, volwassene2], "Lufufu");
 
-        volwassene1.Kinderen.Add(kind1);
-        volwassene2.Kinderen.Add(kind1);
+        //volwassene1.Kinderen.Add(kind1);
+        //volwassene2.Kinderen.Add(kind1);
 
         woning1.Bewoners.Add(volwassene1);
         woning1.Bewoners.Add(volwassene2);
@@ -27,9 +27,9 @@ class Program
 
         var volwassene3 = new Slager("Steve", DateTime.Now, null);
         var volwassene4 = new Brandweerlied("Alex", DateTime.Now, null);
-        var kat1 = new Kat("Larry", DateTime.Now, true, volwassene3, true, Kattenras.EuropeesKorthaar);
-        var hond1 = new Hond("Scooby", DateTime.Now, false, volwassene4, true, HondGrootte.Middel);
-
+        
+        var kat1 = new Kat("Evil Larry", DateTime.Now, true, volwassene3, true, Kattenras.EuropeesKorthaar);
+        var hond1 = new Hond("Scooby Doo", DateTime.Now, false, volwassene4, true, HondGrootte.Middel);
         volwassene3.Huisdieren.Add(kat1);
         volwassene4.Huisdieren.Add(hond1);
 
