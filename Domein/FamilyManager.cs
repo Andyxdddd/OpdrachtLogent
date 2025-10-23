@@ -1,6 +1,6 @@
 namespace Domein;
 
-public static class KindFactory
+public static class FamilyManager
 {
     public static Kind MaakKind(string naam, DateTime geboortedatum, string? foto,
         List<Volwassene> ouders, string favorietSpeelgoed)
@@ -10,5 +10,10 @@ public static class KindFactory
         foreach (var ouder in ouders) ouder.Kinderen.Add(kind);
         
         return kind;
+    }
+
+    public static void VerwijderKind(this Kind kind)
+    {
+        throw new NotImplementedException();
     }
 }
