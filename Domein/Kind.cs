@@ -22,6 +22,4 @@ public class Kind : Persoon
         Ouders = ouders;
         FavorietSpeelgoed = favorietSpeelgoed;
     }
-
-    // TODO: favorietSpeelgoed
 }

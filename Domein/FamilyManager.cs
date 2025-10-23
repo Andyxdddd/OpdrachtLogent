@@ -12,7 +12,7 @@ public static class FamilyManager
         return kind;
     }
 
-    public static void VerwijderKind(this Kind kind)
+    public static void VerwijderKind(Kind kind)
     {
         throw new NotImplementedException();
     }
